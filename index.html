@@ -6,9 +6,92 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="estilo.css">
   <script src="https://kit.fontawesome.com/2ee0245f3d.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="responsiveslides.min.js"></script>
   <title>Document</title>
 </head>
 <body>
+  <br><br>
+    <header>
+      <section class="contenedor_slide">
+        <ul class="rslides">
+          <li><img src="imagenes/slide1.jpg" alt=""></li>
+          <li><img src="imagenes/slide2.jpg" alt=""></li>
+          <li><img src="imagenes/slide3.jpg" alt=""></li>
+        </ul>
+        <div class="filtromorado">
+          <h4>WE ARE THE MOST</h4>
+          <br>
+          <h2>CREATIVE OUR BUSINESS <span class="morado">TEAM</span></h2>
+          <p class="parrafos">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis necessitatibus impedit neque porro possimus! Perspiciatis reiciendis ve</p>
+        </div>
+      </section>
+    </header>
+
+  <h2 class="titulos">OUR <span class="morado"> SERVICE</span></h2>
+  <p class="parrafos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, velit, aliquam sapiente quaerat qui distinctio corrupti.</p>
+  <div class="contenedorlinea">
+    <hr>
+    <i class="fas fa-bars fa-2x"></i>
+    <hr>
+  </div>
+  <br>
+  <section class="contenedor_our ancho">
+    <article>
+      <div class="iconocirculo">
+        <i class="fa-solid fa-desktop"></i>
+      </div>
+      <h2>GRAPHIC DESIGN</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro vero natus dicta?</p>
+    </article>
+
+    <article>
+      <div class="iconocirculo">
+        <i class="fa-solid fa-code"></i>
+      </div>
+      <h2>WEB DEVELOPER</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro vero natus dicta?</p>
+    </article>
+
+    <article>
+      <div class="iconocirculo">
+        <i class="fa-sharp fa-solid fa-cubes"></i>
+      </div>
+      <h2>PRODUCT DESIGN</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro vero natus dicta?</p>
+    </article>
+
+    <article>
+      <div class="iconocirculo">
+        <i class="fa-regular fa-pen-to-square"></i>
+      </div>
+      <h2>BLOG WRITING</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro vero natus dicta?</p>
+    </article>
+  </section>
+<br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <h1 class="ancho1">Otras opciones para el position absolute</h1>
   <br><br><br>
   <section class="contenedor_imagenes">
@@ -121,5 +204,11 @@
   </figure>
 
 </section>
+
+<script>
+  $(function() {
+    $(".rslides").responsiveSlides();
+  });
+</script>
 </body>
 </html>
