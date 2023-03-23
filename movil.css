@@ -1,0 +1,5 @@
+@media screen and (max-width: 390px) {
+  .contenedor_our article {
+  max-width: 300px;
+}
+}

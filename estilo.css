@@ -30,7 +30,6 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
-  border: 3px red solid;
   height: 500px;
   }
 
@@ -125,6 +124,50 @@ body {
     color: white;
   }
 
+  .contenedor_caracteristicas {
+    background: rgba(7, 1, 90, 0.6);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: 2;
+  }
+
+  .contenedor_caracteristicas h2 {
+    color: #7564E5;
+    text-align: center;
+  }
+
+  .contenedor_caracteristicas h3 {
+    color: #f2f2f2;
+    text-align: center;
+  }
+
+  .contenedor_caracteristicas article {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contenedor_parallaxs1 {
+    height: 250px;
+    background-image: url(imagenes/parallaxs1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position-y: -300px; */
+    background-attachment: fixed;
+    position: relative;
+  }
+
   .contenedor_team {
     display: flex;
     flex-direction: row;
@@ -136,7 +179,6 @@ body {
 
   .contenedor_team figure {
     width: 270px;
-    border: 1px blue solid;
     position: relative;
     overflow: hidden;
   }
@@ -148,6 +190,7 @@ body {
   .contenedor_team figure img {
     width: 100%;
   }
+
 
   .contenedor_team figcaption {
     background-color: rgba(0, 0, 0, 0.5);
@@ -174,6 +217,150 @@ body {
     padding: 0px 5px 30px 5px;
   }
 
+  .categorias {
+    background-color: #7564E5;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    height: 120px;
+    max-width: 350px;
+    border-radius: 15px;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+  }
+
+  .costo {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 15px;
+
+  }
+
+  .contenedor_precios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .precio {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 2px #333 solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+
+  .precio hr {
+    border: 0;
+    height: 1px;
+    width: 30%;
+    background-color: #333;
+    margin-top: -10px;
+    margin-bottom: 5px;
+  }
+
+  .card {
+    border: 1px #ccc solid;
+    width: 300px;
+    text-align: center;
+    border-radius: 15px;
+    padding-top: 130px;
+    position: relative;
+    transition: all 0.5s;
+  }
+
+  .colormorado {
+    color: #6B5DD6;
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .card .bordes {
+    border-top: 1px #ccc solid;
+    border-bottom: 1px #ccc solid;
+    padding: 10px;
+    padding-left: 5px;
+    transition: all 0.5s;
+  }
+
+  .card .bordes:hover i {
+    margin-left: 20px;
+    transition: all 0.5s;
+  }
+
+  .card:hover {
+    margin-top: -20px;
+  }
+
+  .card .bordes:hover {
+    padding-left: 0;
+  }
+
+  .card .quitaborde {
+    border-top: 0px;
+  }
+
+  .morado {
+    background-color: #7564E5;
+    color: white;
+    border: 1px #7564E5 solid;
+  }
+
+  .linea {
+    border: 0px;
+    height: 1px;
+    width: 35%;
+    background-color: #333;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .lineablanca {
+    border: 0px;
+    height: 1px;
+    width: 35%;
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .card p {
+    padding: 10px;
+  }
+
+  .btn_morado {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 60px;
+    color: white;
+    margin-bottom: 10px;
+    background-color: #7564E5;
+    transition: all 0.5s;
+  }
+
+  .btn_morado:hover {
+    color: white;
+    background-color: #333333;
+  }
+
   .iconoredes {
     width: 125px;
     display: flex;
@@ -192,7 +379,7 @@ body {
     color: #e600ff;
   }
 
-  .morado {
+  .morado2 {
     color: purple;
   }
 
@@ -285,5 +472,82 @@ body {
   .contenedor_our p {
     padding-top: 10px;
   }
+/* Animaciones */
+  .animacion1 {
+    animation-name: mover;
+    animation-duration: 3s;
+  }
 
-  
+  .objeto1 {
+    max-width: 300px;
+    animation-name: mover;
+    animation-duration: 3s;
+    margin-left: -500;
+  }
+  .contenedor_caracteristicas {
+    background: rgba(7, 1, 90, 0.6);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: 2;
+  }
+
+  .contenedor_parallaxs2 {
+    position: relative;
+    height: 350px;
+    background-image: url(imagenes/parallaxs2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+  }
+
+  .contenedor_comentarios {
+    background: rgba(7, 1, 90, 0.6);
+    display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      gap: 30px;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+
+  }
+  .contenedor_comentarios img {
+    border-radius: 50px;
+    background-color: white;
+    text-align: center;
+  }
+
+  .contenedor_parallaxs2 p {
+    text-align: center;
+    color: white;
+  }
+
+  .contenedor_parallaxs2 h3 {
+    color: #6B5DD6;
+  }
+
+  @keyframes mover {
+    from {
+    margin-left: -500px;
+    opacity: 0;
+    }
+
+    to {
+      margin-left: 0;
+      opacity: 1;
+    }
+  }
+
